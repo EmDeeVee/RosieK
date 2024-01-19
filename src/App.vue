@@ -1,22 +1,31 @@
 <script setup>
-    import Slider from "./components/Slider.vue";
-    import CtaButton from "./components/CtaButton.vue"
+    import { ref, computed } from 'vue'
+    import Home from "./components/Home.vue"
+    // import Question from "./components/Question.vue"
+    // import Subscribe from "./components/Subscribe.vue"
+
+    const routes = {
+        '/': Home,
+        // '/question': Question,
+        // '/subscribe': Subscribe,
+    }
+
+    const currentPath = ref(window.location.hash)
+
+    window.addEventListener('hashchange', () => {
+        currentPath.value = window.location.hash
+    })
+
+    const currentView = computed(() => {
+        return routes[currentPath.value.slice(1) || '/' ]
+    })
+
 </script>
 
 <template>
      <section class="flex justify-center items-center">
         <div id="frame" class="container mt-6 justify-center max-w-screen-md relative">
-            <div class="absolute z-30">
-                <img src="./assets/DinoRosieKAd.png" alt="" class="rounded-3xl shadow-slate-900 shadow-2xl drop-shadow-2xl">
-                <div class="absolute bottom-0 mb-8 grid grid-cols-5 gap-4 w-full">
-                    <div></div>
-                    <CtaButton label="Subscribe" />
-                    <div></div>
-                    <CtaButton label="Visit my Store" />
-                    <div></div>
-                </div>
-            </div>
-            <Slider />
+            <component :is="currentView" /> 
         </div>
     </section>
 </template>
