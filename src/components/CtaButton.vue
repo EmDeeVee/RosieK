@@ -1,10 +1,10 @@
 <script setup>
-defineProps(['label']);
+defineProps(['label', 'dest']);
 </script>
 
 <template>
-    <button class="bg-purple-600 hover:bg-purple-950 text-white font-bold py-2 rounded-full">
+    <a :href="dest" class="py-2 bg-purple-600 hover:bg-purple-950 text-white font-bold rounded-full text-center">
         {{ label }}
-    </button>
+    </a>
 </template>
 

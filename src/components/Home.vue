@@ -8,9 +8,9 @@
         <img src="../assets/DinoRosieKAd.png" alt="" class="rounded-3xl shadow-slate-900 shadow-2xl drop-shadow-2xl">
         <div class="absolute bottom-0 mb-8 grid grid-cols-5 gap-4 w-full">
             <div></div>
-            <CtaButton id='subscribe' label="Subscribe" />
+            <CtaButton id='subscribe' label="Subscribe" dest="#/subscribe"/>
             <div></div>
-            <CtaButton id='visit' label="Visit my Store" />
+            <CtaButton id='visit' label="Visit my Store" dest="#/question"/>
             <div></div>
         </div>
     </div>

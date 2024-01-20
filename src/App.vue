@@ -1,13 +1,13 @@
 <script setup>
     import { ref, computed } from 'vue'
     import Home from "./components/Home.vue"
-    // import Question from "./components/Question.vue"
-    // import Subscribe from "./components/Subscribe.vue"
+    import Question from "./components/Question.vue"
+    import Subscribe from "./components/Subscribe.vue"
 
     const routes = {
         '/': Home,
-        // '/question': Question,
-        // '/subscribe': Subscribe,
+        '/question': Question,
+        '/subscribe': Subscribe,
     }
 
     const currentPath = ref(window.location.hash)
