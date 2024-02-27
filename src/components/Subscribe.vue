@@ -21,13 +21,13 @@
                         <div>
                             <div class="">
                                 <p><b>Gender:</b></p>
-                                <input name="gendersel" type="radio" class="h-5 w-8" value="1" v-model="gender" />
+                                <input name="gendersel" type="radio" class="h-5 w-8" value="male" v-model="gender" />
                                 <label for="male">Male</label>
                                 <br>
-                                <input name="gendersel" type="radio" class="h-5 w-8" value="2" v-model="gender" />
+                                <input name="gendersel" type="radio" class="h-5 w-8" value="female" v-model="gender" />
                                 <label for="female">Female</label>
                                 <br>
-                                <input name="gendersel" type="radio" class="h-5 w-8" value="3" v-model="gender" checked />
+                                <input name="gendersel" type="radio" class="h-5 w-8" value="unknown" v-model="gender" checked />
                                 <label fo="unknown">Rather not Say</label>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ export default {
             listNo: 1,
             name: '',
             email: '',
-            gender: 3,
+            gender: 'unknown',
             emailError: '',
             returnData: null
         }
