@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# RosieK (Instagram size Landing page with subscribe otion)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A small vite/tailwind app, displaying an image slide show, designed for small screen sizes (instagram) with the option to subscribe and redirect to the web shop.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Recommended Setup
+
+At this moment.  Hard coded images. Status: **Work in progress**
+
+Happy Hunting!  😜
